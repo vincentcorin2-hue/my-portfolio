@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Apir Samuel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="planner.html">Planner</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Me</h1>
+
+    <section class="card">
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your full name">
+          <small class="error" id="name-error"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="you@example.com">
+          <small class="error" id="email-error"></small>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="08012345678">
+          <small class="error" id="phone-error"></small>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message here"></textarea>
+          <small class="error" id="message-error"></small>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+        <p id="form-success"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>&copy; 2026 Apir Samuel</p></footer>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>

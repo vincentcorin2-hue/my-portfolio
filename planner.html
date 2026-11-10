@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | Apir Samuel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="planner.html" class="active">Planner</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Academic Planner</h1>
+
+    <section class="card">
+      <form id="task-form">
+        <label for="task-input">New task</label>
+        <div class="row">
+          <input type="text" id="task-input" placeholder="e.g. Finish COS 106 project">
+          <button type="submit" class="btn">Add Task</button>
+        </div>
+      </form>
+      <p id="task-count"></p>
+      <ul id="task-list"></ul>
+    </section>
+  </main>
+
+  <footer><p>&copy; 2026 Apir Samuel</p></footer>
+
+  <script src="js/planner.js"></script>
+</body>
+</html>
